@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* .quicksand-<uniquifier> {
+/* shared styles */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.primary-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
-} */
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 47px;
+}
 
 /* .raleway-<uniquifier> {
     font-family: "Raleway", serif;
@@ -13,4 +28,241 @@
     font-weight: <weight>;
     font-style: normal;
 }
-   */
+*/
+
+
+/* header */
+header {
+    max-width: 1160px;
+    margin: 0px auto;
+}
+
+/* navigation section */
+.nav {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav .menu-icon {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nav .contact-btn {
+    font-size: 1.25rem;
+    color: white;
+    background-color: #FEA301;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.section-description {
+    margin: 24px 0px;
+    font-size: 1.25rem;
+}
+
+/* main */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* curriculum section */
+.curriculum {
+    background: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.curriculum .section-title {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 52px 40px;
+    width: 367px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 52px 40px;
+    width: 367px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 52px 40px;
+    width: 367px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(32, 32, 32, 1);
+}
+.card-description{
+    font-family: "Raleway", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+.readmore-btn{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-weight: 1rem;
+}
+.curriculum-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.curriculum .orange-btn{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    background-color: #FEA301;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+@media screen and (max-width:576px) {
+    .section-title {
+        font-size: 2rem;
+
+    }
+
+    .section-description {
+        font-size: .8rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 0px 5%;
+    }
+
+    .banner,
+    .card-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .navbar ul,
+    .contact-btn,
+    .brand h3,
+    .orange-btn {
+        display: none;
+    }
+
+    .nav {
+        border: .5px solid #FEA301;
+        margin: 0px;
+        padding: 12px 5%;
+    }
+
+    .nav .menu-icon {
+        display: block;
+    }
+    .curriculum .section-title{
+        font-size: 1.6rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+}
