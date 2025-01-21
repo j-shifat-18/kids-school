@@ -111,7 +111,14 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
-
+/* marquee */
+.marquee{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color:  rgb(222, 245, 255);
+    padding: 10px;
+}
 /* curriculum section */
 .curriculum{
     background: url('../assets/bg.png');
