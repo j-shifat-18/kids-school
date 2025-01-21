@@ -264,6 +264,49 @@ main {
 .stories .btn-primary{
     margin-bottom: 60px;
 }
+.footer{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: rgba(1, 172, 253, 1);
+    display: flex;
+    color: white;
+    /* align-items: center; */
+    justify-content: space-around;
+   
+
+}
+
+.footer .logo-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+.footer .container-1{
+    max-width: 400px;
+}
+.footer .container-1 .section-title{
+    font-size: 2.6rem;
+    line-height: 39.51px;
+    color: white;
+}
+.footer .container-1 .section-description{
+    font-size: 1.25rem;
+}
+.footer .container-2 .section-title,
+.footer .container-3 .section-title{
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+.footer .container-2 p{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.footer .container-3 img{
+    margin-right: 10px;
+}
 @media screen and (max-width:576px) {
     .section-title {
         font-size: 2rem;
@@ -286,8 +329,7 @@ main {
         padding: 0px 5%;
     }
 
-    .banner,
-    .card-container{
+    .banner{
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -339,6 +381,14 @@ main {
     }
     .stories .card img{
         width: 100%;
+    }
+
+    .card-container,
+    .footer{
+        flex-direction: column;
+    }
+    .footer{
+        padding-left: 30px;
     }
 
 }
