@@ -241,6 +241,7 @@ main {
     grid-row: span 2;
     background-color: white;
     border-radius: 16px;
+    position: relative;
     
 }
 .stories .card{
@@ -264,6 +265,41 @@ main {
 .stories .btn-primary{
     margin-bottom: 60px;
 }
+#card-1 .date{
+    background-color: rgba(60, 216, 232, 1);
+    border-radius: 48px;
+    padding: 15px 20px;
+    /* display: inline; */
+    color: white;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.stories .floating-date{
+    position: relative;
+}
+.stories .floating-date .date{
+    background-color: rgba(149, 178, 38, 1);
+    padding: 10px 20px;
+    font-size:1rem;
+    font-family: "Raleway", serif;
+    border-radius: 48px;
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: -13px;
+    left: 10%;
+
+}
+.stories .floating-date .date-2{
+    background-color: rgba(93, 88, 240, 1);
+}
+
+
+/* footer */
 .footer{
     padding-top: 130px;
     padding-bottom: 130px;
@@ -381,6 +417,12 @@ main {
     }
     .stories .card img{
         width: 100%;
+    }
+
+    .stories .floating-date .date{
+        font-size: .6rem;
+        padding: 5px 10px;
+        bottom: -7px;
     }
 
     .card-container,
