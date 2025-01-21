@@ -321,11 +321,16 @@ main {
     #card-1{
         display: none;
     }
+
+    .stories{
+        gap: 20px;
+    }
     .stories .card-container{
         grid-template-columns: repeat(2,1fr);
     }
     .stories .card{
         max-width: 173px;
+        height: 180px;
     }
     .stories .card .card-title{
         text-align: left;
