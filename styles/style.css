@@ -307,6 +307,9 @@ main {
     background-color: rgba(93, 88, 240, 1);
 }
 
+.stories .mobile-card{
+    display: none;
+}
 
 /* footer */
 .footer{
@@ -432,6 +435,9 @@ main {
         font-size: .6rem;
         padding: 5px 10px;
         bottom: -7px;
+    }
+    .stories .mobile-card{
+        display: block;
     }
 
     .card-container,
