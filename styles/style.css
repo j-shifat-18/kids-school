@@ -402,6 +402,11 @@ main {
     .nav .menu-icon {
         display: block;
     }
+    .marquee{
+        margin-top: 40px;
+        font-size: 1.5rem;
+
+    }
     .curriculum .section-title{
         font-size: 1.6rem;
         margin-top: 40px;
